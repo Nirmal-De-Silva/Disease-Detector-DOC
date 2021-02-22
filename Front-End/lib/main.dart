@@ -1,37 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-    home: Home()
+    home: LoginPage()
   ));
-
-class Home extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Image(
-          image: AssetImage('assets/layout1.png'),
-          height: 2560,
-          width: 1440,
-          fit: BoxFit.fitWidth,
-        )
-
-        // Text(
-        // 'Hello World',
-        // style: TextStyle(
-        //   fontSize: 20.0,
-        //   fontWeight: FontWeight.bold,
-        //   letterSpacing: 2.0,
-        //   color: Colors.greenAccent[700],
-        //   fontFamily: 'Montserrat',
-        // ),
-        // ),
-
-      ),
-
-    );
-  }
-}
 
 class LoginPage extends StatelessWidget {
   @override
@@ -114,14 +85,14 @@ class LoginPage extends StatelessWidget {
                             Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.blue,
+                                color: Colors.green,
                                 borderRadius: BorderRadius.circular(16),
                               ),
                               child: FlatButton(
                                 onPressed: () {},
                                 child: Padding(
                                   padding:
-                                  const EdgeInsets.symmetric(vertical: 16),
+                                  const EdgeInsets.symmetric(vertical: 20),
                                   child: Text(
                                     'Login',
                                   ),
@@ -158,5 +129,6 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
 
 
