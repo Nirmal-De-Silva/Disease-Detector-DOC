@@ -6,7 +6,7 @@ class ProfilePage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('drawable\profile_bg.png'),
+          image: AssetImage('assets\layout4.png'),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(Colors.black45,BlendMode.darken),
       ),
