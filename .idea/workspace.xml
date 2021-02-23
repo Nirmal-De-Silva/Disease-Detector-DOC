@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d171fa09-18ab-404a-b10a-24836fb57119" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Disease-Detector-DOC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Disease-Detector-DOC.iml" afterDir="false" />
-    </list>
+    <list default="true" id="d171fa09-18ab-404a-b10a-24836fb57119" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
