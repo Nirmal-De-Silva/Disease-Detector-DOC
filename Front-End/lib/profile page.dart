@@ -114,6 +114,3 @@ class profile_page extends StatelessWidget {
     );
   }
 }
-
-
-
