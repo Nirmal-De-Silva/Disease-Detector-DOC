@@ -1,24 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'createAcc.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginPage(),
-    );
-  }
-}
+void main() => runApp(MaterialApp(
+    home: LoginPage()
+  ));
 
 class LoginPage extends StatelessWidget {
   @override
@@ -28,7 +12,7 @@ class LoginPage extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/doc2.png'),
+                image: AssetImage('assets/layout2.png'),
                 fit: BoxFit.cover,
               )),
         ),
@@ -101,17 +85,14 @@ class LoginPage extends StatelessWidget {
                             Container(
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: Colors.blue,
+                                color: Colors.green,
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              child: ElevatedButton(
-                                onPressed: () {
-                                  //Navigator.push(context,
-                                  // MaterialPageRoute(builder: (context)=> CreateAccount()),);
-                                },
+                              child: FlatButton(
+                                onPressed: () {},
                                 child: Padding(
                                   padding:
-                                  const EdgeInsets.symmetric(vertical: 16),
+                                  const EdgeInsets.symmetric(vertical: 20),
                                   child: Text(
                                     'Login',
                                   ),
@@ -122,14 +103,13 @@ class LoginPage extends StatelessWidget {
                               height: 100,
                             ),
                             Container(
-                              child: TextButton(
-                                child: Text('CreateAccount'),
-                                onPressed: () {
-                                  // Navigate to second route when tapped.
-                                  Navigator.push(context,
-                                    MaterialPageRoute(builder: (context)=> CreateAccount()),
-                                  );
-                                },
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                    bottom:
+                                    BorderSide(color: Colors.black12, width: 1),
+                                  )),
+                              child: Text(
+                                'CreateNewAccount',
                               ),
                             ),
                             SizedBox(
@@ -149,3 +129,6 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+
+
