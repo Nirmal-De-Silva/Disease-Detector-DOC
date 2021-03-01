@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-    home: profile_page()
+    home: checkUpTypePage()
 ));
 
-class profile_page extends StatelessWidget {
+class checkUpTypePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -23,12 +23,38 @@ class profile_page extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 250,
+                    height: 150,
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 40),
                     child: Column(
                       children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[500].withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                            ),
+
+                            Padding(
+
+                              padding: const EdgeInsets.symmetric(vertical: 12),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[500].withOpacity(0.5),
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                              ),
+                            ),
+                            Text(
+                              'Check Up Type',
+                              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40,color: Colors.green),
+                            ),
+                          ],
+                        ),
                         Column(
                           children: [
                             SizedBox(
@@ -47,7 +73,7 @@ class profile_page extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 20),
                                     child: Text(
-                                      'Enter Symptoms',
+                                      'Eye Related',
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
@@ -67,7 +93,7 @@ class profile_page extends StatelessWidget {
                                   child: Padding(
                                     padding:const EdgeInsets.symmetric(vertical: 20),
                                     child: Text(
-                                      'Previous Detection',
+                                      'Other',
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
