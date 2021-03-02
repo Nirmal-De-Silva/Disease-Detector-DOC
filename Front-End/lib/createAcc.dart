@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'profilePage.dart';
 import 'login_page.dart';
 
 class CreateAccount extends StatelessWidget {
@@ -10,7 +11,7 @@ class CreateAccount extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/doc2.png'),
+                image: AssetImage('assets/layout2.png'),
                 fit: BoxFit.cover,
               )),
         ),
@@ -139,19 +140,25 @@ class CreateAccount extends StatelessWidget {
                             SizedBox(
                               height: 100,
                             ),
-                            Container(
-                              width: double.infinity,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              child: ElevatedButton(
-                                onPressed: () {},
-                                child: Padding(
-                                  padding:
-                                  const EdgeInsets.symmetric(vertical: 16),
-                                  child: Text(
-                                    'SIGN UP',
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: FlatButton(
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                      MaterialPageRoute(builder: (context)=> profile_page()),);
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 20),
+                                    child: Text(
+                                      'SIGN UP',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
                                 ),
                               ),

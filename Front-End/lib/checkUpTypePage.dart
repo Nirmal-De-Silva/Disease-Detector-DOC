@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
-    home: checkUpTypePage()
-));
-
 class checkUpTypePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

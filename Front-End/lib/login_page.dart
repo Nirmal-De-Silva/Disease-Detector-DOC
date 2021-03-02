@@ -1,24 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'profilePage.dart';
+
 import 'createAcc.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginPage(),
-    );
-  }
-}
 
 class LoginPage extends StatelessWidget {
   @override
@@ -28,7 +12,7 @@ class LoginPage extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/doc2.png'),
+                image: AssetImage('assets/layout2.png'),
                 fit: BoxFit.cover,
               )),
         ),
@@ -98,22 +82,25 @@ class LoginPage extends StatelessWidget {
                             SizedBox(
                               height: 100,
                             ),
-                            Container(
-                              width: double.infinity,
-                              decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              child: ElevatedButton(
-                                onPressed: () {
-                                  //Navigator.push(context,
-                                  // MaterialPageRoute(builder: (context)=> CreateAccount()),);
-                                },
-                                child: Padding(
-                                  padding:
-                                  const EdgeInsets.symmetric(vertical: 16),
-                                  child: Text(
-                                    'Login',
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: FlatButton(
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                      MaterialPageRoute(builder: (context)=> profile_page()),);
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 20),
+                                    child: Text(
+                                      'Login',
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   ),
                                 ),
                               ),

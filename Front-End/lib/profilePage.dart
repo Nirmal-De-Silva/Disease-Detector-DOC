@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-void main() => runApp(MaterialApp(
-    home: profile_page()
-));
+import 'checkUpTypePage.dart';
 
 class profile_page extends StatelessWidget {
   @override
@@ -43,7 +40,10 @@ class profile_page extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: FlatButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                      MaterialPageRoute(builder: (context)=> checkUpTypePage()),);
+                                  },
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 20),
                                     child: Text(
@@ -63,7 +63,10 @@ class profile_page extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: FlatButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(context,
+                                      MaterialPageRoute(builder: (context)=> checkUpTypePage()),);
+                                  },
                                   child: Padding(
                                     padding:const EdgeInsets.symmetric(vertical: 20),
                                     child: Text(
