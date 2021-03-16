@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "296268496720",
+    "project_id": "chatbotdoc",
+    "storage_bucket": "chatbotdoc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296268496720:android:ee7996b4ab5832ce5bf655",
+        "android_client_info": {
+          "package_name": "com.example.chatbotdoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296268496720-cb0711o8adebq8rr5ms1srstc60chduq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Tnc80qDDumR_E1h5oUIg0ZbeHOnFPbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296268496720-cb0711o8adebq8rr5ms1srstc60chduq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296268496720:android:d4e67e12d9e90f325bf655",
+        "android_client_info": {
+          "package_name": "com.example.chatbotdoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296268496720-cb0711o8adebq8rr5ms1srstc60chduq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Tnc80qDDumR_E1h5oUIg0ZbeHOnFPbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296268496720-cb0711o8adebq8rr5ms1srstc60chduq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
