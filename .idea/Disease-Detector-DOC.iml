@@ -19,12 +19,19 @@
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/Back-End/chatbot_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Back-End/chatbot_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Back-End/chatbotdoc/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Back-End/chatbotdoc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Back-End/chatbotdoc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Back-End/doc_backend/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Back-End/doc_backend/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Back-End/doc_backend/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Front-End/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Front-End/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Front-End/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>

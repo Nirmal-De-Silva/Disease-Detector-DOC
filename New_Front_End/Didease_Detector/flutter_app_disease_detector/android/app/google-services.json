@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196473609259",
+    "project_id": "flutter-disease-detector",
+    "storage_bucket": "flutter-disease-detector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196473609259:android:1057e1bade8c1111b01e6e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_disease_detector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196473609259-t4pc5rethtgqjo1v8tva5d6h972p1k1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvFWFP31pcZpDU1YfSCbFbZkB8BgmfAoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196473609259-t4pc5rethtgqjo1v8tva5d6h972p1k1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
