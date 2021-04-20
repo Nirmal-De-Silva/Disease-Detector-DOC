@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ffd5d0-5dd3-4b4f-af37-b581dd2bcfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/layout1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/layout2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/layout3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/layout4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/layout5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/lib/checkUpTypePage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/lib/createAcc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/lib/login_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/lib/profilePage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc-disease/doc_disease/lib/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Disease-Detector-DOC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Disease-Detector-DOC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/New_Front_End.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/New_Front_End.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -50,5 +39,15 @@
       <updated>1616906826597</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1618929226857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1618929226857" />
+    <state x="100" y="100" width="1336" height="624" key="AVDManager" timestamp="1618929879881">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="100" y="100" width="1336" height="624" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1618929879881" />
   </component>
 </project>
