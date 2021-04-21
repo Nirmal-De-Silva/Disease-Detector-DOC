@@ -1,9 +1,8 @@
 from tkinter import *
-from tkinter import messagebox
 import numpy as np
 import pandas as pd
 
-l1=['itching','skin_rash','nodal_skin_eruptions','continuous_sneezing','shivering','chills','joint_pain',
+list1=['itching','skin_rash','nodal_skin_eruptions','continuous_sneezing','shivering','chills','joint_pain',
     'stomach_pain','acidity','ulcers_on_tongue','muscle_wasting','vomiting','burning_micturition','spotting_ urination','fatigue',
     'weight_gain','anxiety','cold_hands_and_feets','mood_swings','weight_loss','restlessness','lethargy','patches_in_throat',
     'irregular_sugar_level','cough','high_fever','sunken_eyes','breathlessness','sweating','dehydration','indigestion',
@@ -32,13 +31,13 @@ disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reactio
 'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
 'Impetigo']
 
-l2=[]
-for x in range(0,len(l1)):
-    l2.append(0)
+list=[]
+for x in range(0,len(list1)):
+    list.append(0)
 
-# TESTING DATA
+# Testing the data
 tr=pd.read_csv("Testing.csv")
-tr.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
+tr.replace({'disease':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
 'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
 'Migraine':11,'Cervical spondylosis':12,
 'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Dengue':17,'Typhoid':18,'hepatitis A':19,
@@ -48,14 +47,14 @@ tr.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic chol
 '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
 'Impetigo':40}},inplace=True)
 
-X_test= tr[l1]
-y_test = tr[["prognosis"]]
+X_test= tr[list1]
+y_test = tr[["disease"]]
 np.ravel(y_test)
 
-# TRAINING DATA
+# Training the data
 df=pd.read_csv("Training.csv")
 
-df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
+df.replace({'disease':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
 'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
 'Migraine':11,'Cervical spondylosis':12,
 'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Dengue':17,'Typhoid':18,'hepatitis A':19,
@@ -65,9 +64,9 @@ df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic chol
 '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
 'Impetigo':40}},inplace=True)
 
-X= df[l1]
+X= df[list1]
 
-y = df[["prognosis"]]
+y = df[["disease"]]
 np.ravel(y)
 
 def message():
@@ -80,20 +79,16 @@ def NaiveBayes():
     from sklearn.naive_bayes import MultinomialNB
     gnb = MultinomialNB()
     gnb=gnb.fit(X,np.ravel(y))
-    from sklearn.metrics import accuracy_score
     y_pred = gnb.predict(X_test)
-    #print(accuracy_score(y_test, y_pred))
-    #print(accuracy_score(y_test, y_pred, normalize=False))
 
-    #psymptoms = [Symptom1.get(),Symptom2.get(),Symptom3.get(),Symptom4.get(),Symptom5.get()]
     psymptoms = [symptoms]
 
-    for k in range(0,len(l1)):
+    for k in range(0,len(list1)):
         for z in psymptoms:
-            if(z==l1[k]):
-                l2[k]=1
+            if(z==list1[k]):
+                list[k]=1
 
-    inputtest = [l2]
+    inputtest = [list]
     predict = gnb.predict(inputtest)
     predicted=predict[0]
 
@@ -116,7 +111,7 @@ while True:
     inp.replace('!', '')
     if inp.lower() == "help":
         print("DOC : Please enter symptoms separated by commas(,)")
-        symptoms = input("DOC : enter symptoms: ")
+        symptoms = input("DOC : Enter symptoms: ")
         print("DOC : Please wait...")
         message()
     elif inp.lower() == "quit":
