@@ -4,12 +4,7 @@ import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:intl/intl.dart';
 
 
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class DiseaseDetection extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {

@@ -28,6 +28,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Front-End/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/Front-End/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/Front-End/build" />
+      <excludeFolder url="file://$MODULE_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

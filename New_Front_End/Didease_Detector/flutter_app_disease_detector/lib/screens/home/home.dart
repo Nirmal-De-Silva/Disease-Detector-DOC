@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_disease_detector/screens/camera/camera.dart';
+import 'package:flutter_app_disease_detector/screens/disease_detection/diseaseDetection.dart';
 import 'package:flutter_app_disease_detector/services/auth.dart';
 import 'dart:io';
 
@@ -80,9 +81,9 @@ class _HomeState extends State<Home> {
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(16.0))),
-                    onPressed: () async{                    
-                     
-                     
+                    onPressed: () {
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=> DiseaseDetection()),);
                     },
                   ),
                 ],
