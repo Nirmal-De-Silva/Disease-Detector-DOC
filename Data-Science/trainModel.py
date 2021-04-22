@@ -63,7 +63,7 @@ model.add(Dropout(0.2))
 model.add(Dense(num_classes))
 model.add(Activation('softmax'))
 
-epochs = 25
+epochs = 76
 optimizer = 'Adam'
 
 model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
