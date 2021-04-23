@@ -3,16 +3,10 @@ import os
 import cv2
 import pickle
 
-# DATADIRECTORY = "F:\Academic\SPGP\Disease"
-# # CATEGORIES = ['Blepharitis', 'Cellulitis eye']
-# CATEGORIES = ['Chalazion' ,'Blepharitis',  'Cellulitis eye', 'Conjunctivitis(Pink Eye)', 'Dacryocytitis',
-#               'Endophthalmitis', 'Entropion', 'Hordeolum(stye)',
-#               'Internal Hordeolum', 'Keratitis', 'Ocular Herpes', 'Orbital cellulitis', 'Preseptal Cellulitis',
-#               'strabismus', 'Stye', 'Uveitis']
 
-DATADIRECTORY = "F:\Academic\SPGP\FinalDataset\FinalDataset2\FinalDataset2"
-# CATEGORIES = ['Blepharitis', 'Cellulitis eye']
-# CATEGORIES = ['Blepharitis','Cataract', 'Cellulitis eye' ,'Chalazion','Dacryocytitis', 'Keratitis','Normal eye','Pink eye','Stye' , 'Uveitis' ]
+
+DATADIRECTORY = "TrainData"
+
 CATEGORIES = ['Cataract','Chalazion', 'Keratitis','Normal eye','Stye' , 'Uveitis' ]
 
 
