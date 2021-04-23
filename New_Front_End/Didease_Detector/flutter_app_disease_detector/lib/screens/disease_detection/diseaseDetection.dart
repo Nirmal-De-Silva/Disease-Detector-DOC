@@ -50,6 +50,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  String disease = "";
+  
   /*void response(query) async {
     AuthGoogle authGoogle = await AuthGoogle(fileJson: "assets/service.json").build();
     Dialogflow dialogflow = Dialogflow(authGoogle: authGoogle, language: Language.english);
@@ -85,24 +88,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontSize: 20
               ),),
             ),
-            Flexible(
-                child: ListView.builder(
-                    reverse: true,
-                    itemCount: 0,
-                    itemBuilder: (context, index){}
-                    /*itemCount: messsages.length,
-                    itemBuilder: (context, index) => chat(
-                        messsages[index]["message"].toString(),
-                        messsages[index]["data"])*/)
-            ),
+
             SizedBox(
-              height: 20,
+              height: 30,
             ),
 
-            Divider(
+            Container(
+              padding: EdgeInsets.only(top: 15, bottom: 10),
+              child: Text("Enter Your Symptoms", style: TextStyle(
+                  fontSize: 30
+              ),),
+            ),
+
+
+            SizedBox(
+              height: 35,
+            ),
+
+            /*Divider(
               height: 5.0,
               color: Colors.greenAccent,
-            ),
+            ),*/
             Container(
 
 
@@ -113,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),*/
 
                 title: Container(
-                  height: 35,
+                  height: 40,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(
                         15)),
@@ -123,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: TextFormField(
                     controller: messageInsert,
                     decoration: InputDecoration(
-                      hintText: "Enter a Message...",
+                      hintText: "Enter a Symptoms...",
                       hintStyle: TextStyle(
                           color: Colors.black26
                       ),
@@ -144,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
 
-                trailing: IconButton(
+                /*trailing: IconButton(
 
                     icon: Icon(
 
@@ -158,8 +164,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         print("empty message");
                       } else {
                         setState(() {
-                          /*messsages.insert(0,
-                              {"data": 1, "message": messageInsert.text});*/
+                          *//*messsages.insert(0,
+                              {"data": 1, "message": messageInsert.text});//
                         });
                         //response(messageInsert.text);
                         messageInsert.clear();
@@ -168,16 +174,37 @@ class _MyHomePageState extends State<MyHomePage> {
                       if (!currentFocus.hasPrimaryFocus) {
                         currentFocus.unfocus();
                       }
-                    }),
+                    }),*/
 
               ),
 
+
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            RaisedButton.icon(
+              icon: Icon(Icons.arrow_forward),
+              padding: EdgeInsets.fromLTRB(96.5,15,96.5,15),
+              color: Colors.green[400],
+              label: Text(
+                'SUBMIT',style: TextStyle(color: Colors.white),
+              ),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16.0))),
+              onPressed: () {
+                setState(() { 
+                  disease = 'You might have Migraine';
+                  messageInsert.clear();
+                });
+              },
             ),
 
-            SizedBox(
-              height: 15.0,
-            )
-          ],
+            SizedBox(height: 12.0),
+                  Text(disease,
+                    style: TextStyle(color: Colors.red, fontSize: 14.0),
+                  ),
+            ],
         ),
       ),
     );

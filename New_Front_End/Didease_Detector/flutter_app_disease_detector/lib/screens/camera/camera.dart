@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:image_picker/image_picker.dart  ';
 import 'package:flutter/material.dart';
 
+
 class Camera extends StatefulWidget {
   @override
   _CameraState createState() => _CameraState();
@@ -13,7 +14,9 @@ class _CameraState extends State<Camera> {
   final imagePicker = ImagePicker();
 
   Future getImage() async{
-    final image = await imagePicker.getImage(source: ImageSource.camera);
+    Image.network('https://github.com/flutter/plugins/raw/master/packages/video_player/video_player/doc/demo_ipod.gif?raw=true');
+
+    final image = await imagePicker.getImage(source: ImageSource.gallery);
     setState((){
       _image = File(image.path);
       print(_image);
@@ -43,9 +46,14 @@ class _CameraState extends State<Camera> {
             
           ],
 
+
           ),
+          
+          
           body: Center(
+            
             child: _image == null ? Text("No Imge Selected") : Image.file(_image,width: 400, height: 350,),),
+            
             
             floatingActionButton: FloatingActionButton(
               onPressed: 
@@ -57,6 +65,9 @@ class _CameraState extends State<Camera> {
                 color: Colors.green,),
               
             ),
+            
+            
+            
           ),
           
       
