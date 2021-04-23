@@ -2,12 +2,7 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
-import operator
 
-# CATEGORIES = ['Chalazion' , 'Uveitis','Blepharitis',  'Cellulitis eye', 'Conjunctivitis(Pink Eye)', 'Dacryocytitis',
-#               'Endophthalmitis', 'Entropion', 'Hordeolum(stye)',
-#               'Internal Hordeolum', 'Keratitis', 'Ocular Herpes', 'Orbital cellulitis', 'Preseptal Cellulitis',
-#               'strabismus', 'Stye']
 
 filepath = "images"
 
@@ -20,17 +15,12 @@ def prepare(filepath):
     new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE)) / 255.0
     return new_array.reshape(-1, IMG_SIZE, IMG_SIZE, 1)
 
+def predict():
+    model = tf.keras.models.load_model("Eye-model")
 
-model = tf.keras.models.load_model("Eye-model")
-
-prediction = model.predict([prepare('images/uploaded_image.jpg')])
-print(prediction)  # will be a list in a list.
-result = np.argmax(prediction)
-print(result)
-# maxV = prediction[0]
-# for i in prediction:
-#     if maxV < i:
-#         maxV = i
-# print(maxV)
-
-print(CATEGORIES[result])
+    prediction = model.predict([prepare('images/uploaded_image.jpg')])
+    #print(prediction)  # will be a list in a list.
+    result = np.argmax(prediction)
+    output = CATEGORIES[result]
+    print(CATEGORIES[result])
+    return output
