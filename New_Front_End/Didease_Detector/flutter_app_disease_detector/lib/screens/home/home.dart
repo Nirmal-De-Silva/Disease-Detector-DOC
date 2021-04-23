@@ -21,7 +21,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String testString = '';
   // String url = "http://192.168.42.237:5003/";
-  String url = " http://15133533cabc.ngrok.io";
+  String url = "http://10.0.2.2:5003/";
   // String url = "http://127.0.0.1:5003/";
 
   final AuthService _auth = AuthService();  
