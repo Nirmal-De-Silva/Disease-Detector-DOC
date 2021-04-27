@@ -19,7 +19,7 @@ def predict():
     model = tf.keras.models.load_model("Eye-model")
 
     prediction = model.predict([prepare('images/uploaded_image.jpg')])
-    #print(prediction)  # will be a list in a list.
+    print(prediction)  # will be a list in a list.
     result = np.argmax(prediction)
     output = CATEGORIES[result]
     print(CATEGORIES[result])

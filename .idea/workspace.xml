@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d171fa09-18ab-404a-b10a-24836fb57119" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Disease-Detector-DOC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Disease-Detector-DOC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/chatbotdoc/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/chatbotdoc/lib/diseaseDetection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/lib/screens/home/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/lib/screens/home/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/pubspec.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="d171fa09-18ab-404a-b10a-24836fb57119" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[HZQL1838KAKB0300793]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,7 +40,7 @@
       <recent name="C:\Users\Pasindu\Documents\GitHub\SDGP\Disease-Detector-DOC\Back-End\chatbot" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager">
     <configuration name="diseaseDetection.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/Back-End/chatbotdoc/lib/diseaseDetection.dart" />
       <method v="2" />
@@ -59,12 +49,6 @@
       <option name="filePath" value="$PROJECT_DIR$/New_Front_End/Didease_Detector/flutter_app_disease_detector/lib/main.dart" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Flutter.main.dart" />
-        <item itemvalue="Flutter.diseaseDetection.dart" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
