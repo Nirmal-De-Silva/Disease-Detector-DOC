@@ -5,6 +5,7 @@ from werkzeug.utils import secure_filename, redirect
 from predictDisease import prepare, predict
 from flask_cors import CORS
 
+
 app = Flask(__name__)
 CORS(app)
 
